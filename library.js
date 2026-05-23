@@ -2,28 +2,7 @@
 
 const url = require('url');
 
-const SLUG_RE = /^\/(?:topic\/\d+|category\/\d+)\/[^/?#]+/;
-
 const plugin = {};
-
-plugin.init = async (data) => {
-    data.router.use((req, res, next) => {
-        const originalUrl = req.originalUrl || req.url;
-        const parsed = url.parse(originalUrl);
-        const pathname = parsed.pathname || '/';
-
-        if (!SLUG_RE.test(pathname)) {
-            return next();
-        }
-
-        const cleanPath = pathname
-            .replace(/^\/topic\/(\d+)\/[^/?#]+(\/.*)?$/, '/topic/$1$2')
-            .replace(/^\/category\/(\d+)\/[^/?#]+(\/.*)?$/, '/category/$1$2');
-
-        const redirectUrl = cleanPath + (parsed.search || '');
-        res.redirect(301, redirectUrl);
-    });
-};
 
 plugin.filterMetaTags = async (data) => {
     if (!Array.isArray(data.tags)) {

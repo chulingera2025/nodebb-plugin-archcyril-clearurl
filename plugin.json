@@ -9,10 +9,6 @@
   ],
   "hooks": [
     {
-      "hook": "static:app.init",
-      "method": "init"
-    },
-    {
       "hook": "filter:meta.getMetaTags",
       "method": "filterMetaTags"
     }
