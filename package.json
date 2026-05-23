@@ -1,13 +1,13 @@
 {
-  "name": "nodebb-plugin-archcyril-clearurl",
-  "version": "1.0.7",
+  "name": "nodebb-plugin-archcyril-copyurl",
+  "version": "1.0.0",
   "description": "Remove topic/category slugs from NodeBB URLs",
   "main": "library.js",
   "license": "MIT",
   "author": "chulingera2025",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chulingera2025/nodebb-plugin-archcyril-clearurl.git"
+    "url": "https://github.com/chulingera2025/nodebb-plugin-archcyril-copyurl.git"
   },
   "nbbpm": {
     "compatibility": "^4.0.0"
