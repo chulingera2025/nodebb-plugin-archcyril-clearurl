@@ -1,8 +1,8 @@
 {
-  "id": "nodebb-plugin-archcyril-copyurl",
-  "name": "ArchCyril Copy URL",
-  "description": "Clean slugs from copied NodeBB URLs",
-  "url":"https://github.com/chulingera2025/nodebb-plugin-archcyril-copyurl",
+  "id": "nodebb-plugin-archcyril-cleanurl",
+  "name": "ArchCyril Clean URL",
+  "description": "Clean slugs from NodeBB topic/category URLs via client-side URL interception",
+  "url": "https://github.com/chulingera2025/nodebb-plugin-archcyril-cleanurl",
   "library": "./library.js",
   "scripts": [
     "./static/lib/main.js"
